@@ -1,0 +1,24 @@
+{
+  "fieldname": [
+    "id",
+    "ack_num",
+    "do_dr",
+    "roll_no",
+    "compl",
+    "suspect",
+    "gist",
+    "action",
+    "remark"
+  ],
+  "headername": [
+    "S.No",
+    "Ack No",
+    "DO/DR",
+    "FIR Cr.No & Sec/CSR & Date",
+    "Complainant Details",
+    "Accused Details",
+    "Gist of the case",
+    "Action Taken",
+    "Remarks"
+  ]
+}

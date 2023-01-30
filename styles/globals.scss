@@ -1,0 +1,10 @@
+@import "@/styles/data.count.scss";
+
+:root {
+  --dark-bg: rgb(24, 24, 24);
+  --dark-fg: rgb(248, 248, 248);
+}
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-fg);
+}
