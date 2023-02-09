@@ -1,0 +1,56 @@
+[
+  {
+    "table_name": "id",
+    "name": "ID",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "cr_no",
+    "name": "FIR Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "csr_no",
+    "name": "CSR Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "suspect_no",
+    "name": "Suspect Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "circle",
+    "name": "Circle",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "network",
+    "name": "Network",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "cdr_get",
+    "name": "CDR Status",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "imei",
+    "name": "IMEI",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "address",
+    "name": "Address",
+    "type": "text",
+    "disable": false
+  }
+]

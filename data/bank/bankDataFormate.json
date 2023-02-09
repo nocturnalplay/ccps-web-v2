@@ -1,0 +1,134 @@
+[
+  {
+    "table_name": "id",
+    "name": "ID",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "current_no",
+    "name": "Current Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "c_date",
+    "name": "Current Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "csr_no",
+    "name": "CSR Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "csr_date",
+    "name": "CSR Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "cr_no",
+    "name": "Fir number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "cr_date",
+    "name": "FIR Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "debit_bank",
+    "name": "Debit Bank",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "debit_branch",
+    "name": "Debit Branch",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "debit_account",
+    "name": "Debit Account",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "debit_ifsc",
+    "name": "Debit IFSC",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "credit_bank",
+    "name": "Credit Bank",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "credit_branch",
+    "name": "Credit Branch",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "credit_state",
+    "name": "Credit State",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "credit_dist",
+    "name": "Credit District",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "credit_account",
+    "name": "Credit Account",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "credit_ifsc",
+    "name": "Credit IFSC",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "acc_holder",
+    "name": "Account Holder",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "freezed_amt",
+    "name": "Freezed Amount",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "freezed_date",
+    "name": "Freezed Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "unfreezed_amt",
+    "name": "Unfreezed Amount",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "unfreezed_date",
+    "name": "Unfreezed date",
+    "type": "date",
+    "disable": false
+  }
+]

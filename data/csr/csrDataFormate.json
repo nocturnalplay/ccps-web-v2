@@ -1,0 +1,164 @@
+[
+  {
+    "table_name": "id",
+    "name": "ID",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "csr_no",
+    "name": "Csr No",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "do",
+    "name": "DO",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "do_time",
+    "name": "DO Time",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "dr",
+    "name": "DR",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "dr_time",
+    "name": "DR Time",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "compl",
+    "name": "Complainant",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "compl_num",
+    "name": "Complainant Number",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "suspect",
+    "name": "Suspect",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "suspect_num",
+    "name": "Suspect Number",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "gist",
+    "name": "Gist",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "ack_num",
+    "name": "Ack No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "importance",
+    "name": "Importance",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "category",
+    "name": "Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "sub_category",
+    "name": "Sub Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "addl_category",
+    "name": "Addl Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "receive",
+    "name": "Received From",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "prop_lost",
+    "name": "Property Lost",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_hold",
+    "name": "Property Hold",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_refund",
+    "name": "Property Refund",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_rec",
+    "name": "Property Recovered",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_pending",
+    "name": "Property Pending",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "stage",
+    "name": "Stage",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "csr_reg",
+    "name": "Register User",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "team",
+    "name": "Team",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "action",
+    "name": "Action",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "dis_date",
+    "name": "Disposed Date",
+    "type": "date",
+    "disable": false
+  }
+]

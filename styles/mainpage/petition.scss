@@ -1,0 +1,77 @@
+.petition-container,
+.bank-container,
+.network-container {
+  padding: 20px;
+  margin: 10px 0;
+  //navigation for the page that we are using
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    b {
+      margin-left: 10px;
+      margin-top: 6px;
+      text-transform: capitalize;
+      span {
+        font-weight: 100;
+        color: var(--primary-shade);
+      }
+    }
+  }
+  .petition-body,
+  .bank-body,
+  .network-body {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    a {
+      text-decoration: none;
+    }
+    .new-petition,
+    .new-bank,
+    .new-network {
+      width: 180px;
+      height: 200px;
+      background-color: azure;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed;
+      cursor: pointer;
+      gap: 10px;
+      transition: 0.3s;
+      color: var(--primary);
+      &:hover {
+        // transform: translate(0, -4px);
+        box-shadow: 0 0 30px var(--primary-shade);
+        transform: scale(1.1);
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        text-transform: capitalize;
+        font-weight: 900;
+      }
+    }
+    .card {
+      background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+      .card-body {
+        .card-title {
+          font-size: 30px;
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

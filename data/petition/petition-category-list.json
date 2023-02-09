@@ -1,0 +1,28 @@
+{
+  "rec_from": [
+    "PM CELL",
+    "CM CELL",
+    "NHRC",
+    "SHRC",
+    "DGP/ADGP",
+    "CDP",
+    "DC SOUTH",
+    "DC NORTH",
+    "DC HEAD QUARTERS",
+    "ADSP CCW",
+    "RTI",
+    "CCTNS"
+  ],
+  "category": ["FINANCE", "NON-FINANCE"],
+  "enq_officer": [
+    "INS SANTHOSHKUMAR T",
+    "INS PALANIYAMMAL D",
+    "SI ANANTHAKUMAR G",
+    "SI VELMURUGAN K",
+    "SI DINESH V",
+    "SI SAKTHIVEL M",
+    "SSI ELANGOVAN M",
+    "SSI ALAGAPPAN R",
+    "SSI SENTHILKUMAR K"
+  ]
+}

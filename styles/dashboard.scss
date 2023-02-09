@@ -1,0 +1,111 @@
+.dasboard-container {
+  padding: 20px;
+  margin: 10px 0;
+  //navigation for the page that we are using
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    b {
+      margin-left: 10px;
+      margin-top: 6px;
+      text-transform: capitalize;
+      span {
+        font-weight: 100;
+        color: var(--primary-shade);
+      }
+    }
+  }
+  //list of content with the box view
+  .dashboard-content {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card:nth-child(2) {
+      background-color: #85ffbd;
+      background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    }
+    .card:nth-child(3) {
+      background-color: #8ec5fc;
+      background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+    }
+    .card {
+      background-color: #fbab7e;
+      background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+      padding: 20px 20px 10px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px var(--primary-shade);
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      width: 280px;
+      transition: 0.3s;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.114);
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 10px;
+        transform: skew(40deg);
+        transition: 0.3s;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:hover::after {
+        transform: skew(30deg);
+        width: 60%;
+      }
+      .card-body {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        .card-title {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          span {
+            font-size: 15px;
+          }
+          font-size: 30px;
+          text-transform: uppercase;
+        }
+        .card-content {
+          text-align: center;
+          margin: 5px 0;
+          font-size: 60px;
+        }
+      }
+      .card-footer {
+        display: block;
+        margin-top: 10px;
+        background-color: var(--secondary);
+        width: 100%;
+        text-align: center;
+        padding: 8px 0 4px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        transition: 0.2s;
+        &:hover {
+          background-color: var(--secondary);
+          letter-spacing: 5px;
+          font-weight: 900;
+        }
+        a {
+          all: unset;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
   "property": ["5ABOVE", "3-5L", "1-3L", "0-1L", "NO LOST"],
   "Lost Amount": ["5ABOVE", "3-5L", "1-3L", "0-1L", "NO LOST"],
-  "Receive": {
+  "receive": {
     "csr": ["DIRECT", "NCRP", "CCTNS"],
     "fir": ["DIRECT", "NCRP", "DIRECT-CSR-FIR", "NCRP-CSR-FIR"]
   },
-  "Stage": {
+  "stage": {
     "csr": ["CONVERTED TO FIR", "PENDING", "DISPOSED"],
     "fir": ["UI", "NTF", "PT", "DISPOSED"]
   },
@@ -30,7 +30,7 @@
     ]
   },
   "Team": ["Team 1", "Team 2", "Team 3"],
-  "Importance": [
+  "importance": [
     "COMMUNAL",
     "FINANCIAL",
     "NATIONAL",
@@ -38,7 +38,7 @@
     "SOCIAL",
     "STATE"
   ],
-  "Category": [
+  "category": [
     "ANY OTHER CYBER CRIME",
     "CRYPTOCURRENCY CRIME",
     "CYBER TERRORISM",
@@ -50,7 +50,7 @@
     "RANSOMWARE"
     
   ],
-  "Subcategory": [
+  "sub_category": [
     "BUSINESS EMAIL COMPROMISE - EMAIL TAKEOVER",
     "CHEATING BY IMPERSONATION",
     "CRYPTO CURRENCY FRAUD",
@@ -81,8 +81,8 @@
     "WEBSITE DEFACEMENT - HACKING"
     
   ],
-  "Addlcategory": [
-    "ABUSIVE MISSED CALL & EMAIL",
+  "addl_category": [
+    "ABUSIVE MISSED CALL and EMAIL",
     "ANY DESK REMOTE APP",
     "ATM INSTALLATION FRAUD",
     "BITCOIN FRAUD",
@@ -93,7 +93,7 @@
     "DEFAMING",
     "EMAIL HACKING",
     "EXPLICIT FAMILY PHOTOS OR MARFING",
-    "FAKE FACEBOOK FRAUD & EMAIL",
+    "FAKE FACEBOOK FRAUD and EMAIL",
     "FAKE WEBSITE CHEATING",
     "HDFC LIFE INSURANCE PHONE CALL FRAUD",
     "INSTANT LOAN APP",

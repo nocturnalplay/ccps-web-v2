@@ -1,0 +1,98 @@
+[
+  {
+    "table_name": "id",
+    "name": "ID",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "current_no",
+    "name": "Current No",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "rec_from",
+    "name": "Receive From",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "ref_no",
+    "name": "Reference No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "rec_date",
+    "name": "Receive Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "comp",
+    "name": "Complainer Details",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "comp_num",
+    "name": "Complainer Number",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "gist",
+    "name": "Gist",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "lost_prop",
+    "name": "Propery Lost",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "enq_officer",
+    "name": "Inquiry Officer",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "csr",
+    "name": "CSR",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "csr_date",
+    "name": "CSR Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "fir",
+    "name": "FIR",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "fir_date",
+    "name": "FIR Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "dis_date",
+    "name": "Disposed Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "category",
+    "name": "Category",
+    "type": "option",
+    "disable": false
+  }
+]

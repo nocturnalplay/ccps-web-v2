@@ -1,0 +1,182 @@
+[
+  {
+    "table_name": "id",
+    "name": "ID",
+    "type": "number",
+    "disable": true
+  },
+  {
+    "table_name": "cr_no",
+    "name": "Cr No",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "csr_no",
+    "name": "Csr No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "do_from",
+    "name": "DO From",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "do_ftime",
+    "name": "DO Ftime",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "do_to",
+    "name": "Do To",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "do_ttime",
+    "name": "Do Ttime",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "dr",
+    "name": "DR",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "dr_time",
+    "name": "DR Time",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "sol",
+    "name": "Sec of Law",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "compl",
+    "name": "Complainant",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "compl_num",
+    "name": "Complainant Number",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "accus",
+    "name": "Accused",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "accus_num",
+    "name": "Accused Number",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "gist",
+    "name": "Gist",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "ack_num",
+    "name": "Ack No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "importance",
+    "name": "Importance",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "category",
+    "name": "Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "sub_category",
+    "name": "Sub Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "addl_category",
+    "name": "Addl Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "receive",
+    "name": "Received From",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "prop_lost",
+    "name": "Property Lost",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_hold",
+    "name": "Property hold",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_refund",
+    "name": "Property Refund",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_rec",
+    "name": "Property Recovered",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "prop_pending",
+    "name": "Property Pending",
+    "type": "number",
+    "disable": false
+  },
+  {
+    "table_name": "stage",
+    "name": "Stage",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "fir_reg",
+    "name": "Register User",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "action",
+    "name": "Action Taken",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "dis_date",
+    "name": "Disposed Date",
+    "type": "date",
+    "disable": false
+  }
+]

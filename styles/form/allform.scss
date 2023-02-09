@@ -1,0 +1,100 @@
+.new-entry {
+  padding: 20px;
+  margin: 10px 0;
+  //navigation for the page that we are using
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    b {
+      margin-left: 10px;
+      margin-top: 6px;
+      text-transform: capitalize;
+      span {
+        font-weight: 100;
+        color: var(--primary-shade);
+      }
+    }
+  }
+  .heading {
+    margin: 10px 0;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 66px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--primary-shade);
+    backdrop-filter: blur(50px);
+    z-index: 200;
+    background-color: transparent;
+    text-transform: capitalize;
+    background-color: var(--primary);
+    color: var(--secondary);
+    .head-action {
+      display: flex;
+      gap: 20px;
+      button {
+        all: unset;
+        color: var(--secondary);
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button[name="cancle"] {
+        background-color: var(--error-light);
+        &:hover {
+          background-color: var(--error);
+          transform: scale(1.1);
+        }
+        &:active {
+          box-shadow: 0 0 30px var(--error);
+        }
+      }
+      button[name="submit"] {
+        background-color: var(--success-light);
+        &:hover {
+          transform: scale(1.1);
+          background-color: var(--success);
+        }
+        &:active {
+          box-shadow: 0 0 30px var(--success);
+        }
+      }
+    }
+  }
+  .form-controller {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    label {
+      font-size: 21px;
+    }
+
+    input,
+    textarea {
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      background-color: transparent;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.623);
+      &:hover {
+        border: 1px solid black;
+      }
+      &:focus {
+        border: 2px solid black;
+      }
+    }
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+  }
+}

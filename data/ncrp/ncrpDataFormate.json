@@ -1,0 +1,86 @@
+[
+  {
+    "table_name": "id",
+    "name": "Id",
+    "type": "text",
+    "disable": true
+  },
+  {
+    "table_name": "ack_no",
+    "name": "Ack No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "dist",
+    "name": "District",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "ps",
+    "name": "Police Station",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "category",
+    "name": "Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "sub_category",
+    "name": "Sub Category",
+    "type": "option",
+    "disable": false
+  },
+  {
+    "table_name": "status",
+    "name": "Status",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "incident_date",
+    "name": "Incident Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "compl_date",
+    "name": "Complaint Date",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "action_taken",
+    "name": "Action Taken",
+    "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "ef",
+    "name": "EF",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "action_type",
+    "name": "Action Type",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "csr_no",
+    "name": "CSR No",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "fir_no",
+    "name": "FIR No",
+    "type": "text",
+    "disable": false
+  }
+]
