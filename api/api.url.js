@@ -14,13 +14,19 @@ export const API_Query = {
   //signin
   SignIn: () => `/auth/signin`,
   //otp verification
-  OTPverify:()=> `/auth/otpverify`,
+  OTPverify: () => `/auth/otpverify`,
+
   //submit the new entry
   NewEntry: (t) => `/${t}/new`,
   //submit the new entry
   UpdateEntry: (t) => `/${t}/update`,
+
   //get the last entry in the table
   getLast: (t, out) => `/${t}/getlast?out=${out}`,
+
+  //petition transfer to FIR or CSR
+  PetitonTransfer: (data) => `/petition/transfer?to=${data}`,
+
   //total table fetching query
   total: (t) => `/${t}`,
   totalCount: (t) => `/${t}?count=1`,

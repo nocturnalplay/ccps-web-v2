@@ -1,3 +1,5 @@
+@import "@/styles/component.scss";
+
 .csr-container,
 .fir-container,
 .ncrp-container,
@@ -199,13 +201,25 @@
     }
     .part-2 {
       .card:nth-child(6) {
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+        background-image: radial-gradient(
+          circle farthest-corner at 10% 20%,
+          rgba(0, 152, 155, 1) 0.1%,
+          rgba(0, 94, 120, 1) 94.2%
+        );
       }
       .card:nth-child(5) {
-        background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+        background-image: linear-gradient(
+          132.6deg,
+          rgba(71, 139, 214, 1) 23.3%,
+          rgba(37, 216, 211, 1) 84.7%
+        );
       }
       .card:nth-child(4) {
-        background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+        background-image: linear-gradient(
+          109.6deg,
+          rgba(209, 0, 116, 1) 11.2%,
+          rgba(110, 44, 107, 1) 91.1%
+        );
       }
       .card:nth-child(3) {
         background-color: #08aeea;
@@ -378,7 +392,38 @@
     }
   }
 }
-
+// data transfer tab
+.transfer-tab {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  span {
+    font-size: 20px;
+  }
+  input[type="date"] {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: lowercase;
+    border: 1px solid gray;
+    width: fit-content;
+    &:hover {
+      border: 1px solid var(--primary);
+    }
+    &:active {
+      border: 2px solid var(--primary);
+    }
+  }
+  button {
+    @include button;
+    width: fit-content;
+  }
+}
 //single view design
 .single-view {
   margin-top: 10px;
@@ -387,12 +432,29 @@
   overflow: hidden;
   border-radius: 10px;
   width: 100%;
+  padding: 10px 20px;
   .single-update-info {
     padding: 20px;
     font-size: 19px;
     background-color: var(--info-light);
     margin: 10px 0;
     border-radius: 5px;
+  }
+  .petition-status-exist {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--success);
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 19px;
+  }
+  .petition-status {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    button {
+      @include button;
+    }
   }
   .pdf-view {
     width: 100%;

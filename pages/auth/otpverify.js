@@ -73,12 +73,12 @@ export default function SignIn({ id }) {
 
   return (
     <div className="auth-container">
-      <h1>cyber crime police station</h1>
+      {/* <h1>cyber crime police station</h1> */}
       {status.error && <AlertMessage msg={status.msg} title="error" />}
       {status.success && <AlertMessage msg={status.msg} title="success" />}
       <div className="auth">
         <div className="form">
-          <h1>OTP verification</h1>
+          {/* <h1>OTP verification</h1> */}
           <div className="auth-form">
             <label>OTP</label>
             <input type="text" name="otp" onChange={change} value={otp.otp} />

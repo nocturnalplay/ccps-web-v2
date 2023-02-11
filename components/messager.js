@@ -32,10 +32,9 @@ export const Loading = (props) => {
 export const AlertMessage = (props) => {
   return (
     <Alert
-      onClose={() => {}}
       variant="filled"
       severity={props.title}
-      style={{ zIndex: 1000, marginTop: 30 }}
+      className="global-alert"
     >
       <AlertTitle style={{ textTransform: "capitalize" }}>
         {props.title}

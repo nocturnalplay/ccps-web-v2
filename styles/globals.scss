@@ -5,6 +5,9 @@
 @import "@/styles/mainpage/rootmain.scss";
 @import "@/styles/mainpage/dsr.scss";
 @import "@/styles/form/allform.scss";
+@import "@/styles/home.scss";
+@import "@/styles/component.scss";
+
 :root {
   --dark-bg: rgb(240, 240, 240);
   --dark-fg: rgb(24, 24, 24);
@@ -12,10 +15,10 @@
   --primary-fade: #000934c4;
   --primary-shade: #00072c49;
   --secondary: rgb(250, 253, 255);
-  --success: #29be00;
-  --success-light: #26aa02c4;
-  --error-light: #ce060d96;
-  --error: #ce060c;
+  --success: #4BB543;
+  --success-light: #4bb543be;
+  --error-light: #ff9494a4;
+  --error: #FF9494;
   --warning: #fdcc18;
   --warning-light: #fdcb18ce;
   --info: #9bcffd;
@@ -41,7 +44,6 @@ body {
 .body {
   background-color: var(--dark-bg);
   display: flex;
-
   .menu-container {
     color: var(--secondary);
     background-color: var(--primary);
@@ -302,3 +304,23 @@ body {
   width: 100%;
   height: 200px;
 }
+
+//alert design
+.global-alert {
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+  text-transform: capitalize;
+}
+
+//crusor pointer movie design
+// #cursor-pointer {
+//   position: fixed;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   border: 1px solid #cecece;
+//   transition: 0.1s;
+//   z-index: 1;
+// }

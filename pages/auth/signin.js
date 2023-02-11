@@ -70,7 +70,7 @@ export default function SignIn() {
 
   return (
     <div className="auth-container">
-      <h1>cyber crime police station</h1>
+      {/* <h1>cyber crime police station</h1> */}
       {status.error && <AlertMessage msg={status.msg} title="error" />}
       {status.success && <AlertMessage msg={status.msg} title="success" />}
       <div className="auth">

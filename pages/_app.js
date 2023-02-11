@@ -40,8 +40,10 @@ export default function App({ Component, pageProps }) {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
+            <meta name="theme-color" content="#00051d" />
             <title>ccps salem city</title>
           </Head>
+          <MouseCursor />
           <div className="body">
             {menustate && <Menu />}
             <div className="body-container">
@@ -54,3 +56,15 @@ export default function App({ Component, pageProps }) {
     </StrictMode>
   );
 }
+
+const MouseCursor = () => {
+  useEffect(() => {
+    let cursor = document.getElementById("cursor-pointer");
+    document.body.addEventListener("mousemove", (e) => {
+      let x = e.clientX;
+      let y = e.clientY;
+      cursor.style.transform = `translate(${x - 15}px,${y - 15}px)`;
+    });
+  }, []);
+  return <div id="cursor-pointer"></div>;
+};
