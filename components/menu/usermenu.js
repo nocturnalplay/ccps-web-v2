@@ -17,7 +17,7 @@ export default function Menu() {
           alt="menu"
           onClick={menu}
         />
-        <div className="search-icon">
+        {/* <div className="search-icon">
           <input
             type="text"
             placeholder="search"
@@ -31,7 +31,7 @@ export default function Menu() {
             height={35}
             alt="search"
           />
-        </div>
+        </div> */}
       </div>
       <div className="user-noti-icon">
         <Image

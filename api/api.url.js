@@ -27,6 +27,9 @@ export const API_Query = {
   //petition transfer to FIR or CSR
   PetitonTransfer: (data) => `/petition/transfer?to=${data}`,
 
+  //NCRP transfer to FIR or CSR
+  NCRPTransfer: (data) => `/ncrp/transfer?to=${data}`,
+
   //total table fetching query
   total: (t) => `/${t}`,
   totalCount: (t) => `/${t}?count=1`,

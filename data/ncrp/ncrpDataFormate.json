@@ -78,9 +78,21 @@
     "disable": false
   },
   {
+    "table_name": "csr_date",
+    "name": "CSR Date",
+    "type": "date",
+    "disable": false
+  },
+  {
     "table_name": "fir_no",
     "name": "FIR No",
     "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "fir_date",
+    "name": "FIR Date",
+    "type": "date",
     "disable": false
   }
 ]

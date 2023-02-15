@@ -23,6 +23,12 @@ export default function Menu() {
     if (path.length > 2) {
       me.sm((a) => path[2]);
     }
+    document.body.addEventListener("click", (e) => {
+      console.log(document.getElementById("menu").style.width);
+    });
+    if (document.body.clientWidth < 1000) {
+      console.log(document.body.clientWidth);
+    }
   }, []);
   return (
     <div className="menu-container" id="menu">
