@@ -24,11 +24,15 @@ export default function Menu() {
       me.sm((a) => path[2]);
     }
     document.body.addEventListener("click", (e) => {
-      console.log(document.getElementById("menu").style.width);
+      if (e.target.alt !== "menu") {
+        if (document.body.clientWidth < 1000) {
+          let m = document.getElementById("menu");
+          if (m.classList.contains("menuactive")) {
+            m.classList.remove("menuactive");
+          }
+        }
+      }
     });
-    if (document.body.clientWidth < 1000) {
-      console.log(document.body.clientWidth);
-    }
   }, []);
   return (
     <div className="menu-container" id="menu">

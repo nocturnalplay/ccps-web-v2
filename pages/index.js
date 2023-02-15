@@ -22,7 +22,7 @@ export default function Home() {
             security !!user Auth loading....user Auth loading....
           </p>
           <button>
-            <Link href="/auth/signin">Dashboard</Link>
+            <Link href="/ccps/">Dashboard</Link>
           </button>
         </div>
       </div>

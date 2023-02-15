@@ -16,6 +16,7 @@ import {
 } from "@react-pdf/renderer";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { IdGen } from "@/components/new_id_gen/idgen";
 
 // Create styles
 const styles = StyleSheet.create({
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
 export default function Idpetition({ id }) {
   const [petition, setpetition] = useState(petitiondata);
   const router = useRouter();
+  const [nextdata, setnextdata] = useState("");
 
   const [status, setStatus] = useState({
     msg: "",
@@ -80,6 +82,38 @@ export default function Idpetition({ id }) {
           });
           if (d.Status) {
             setpetition(d.Data[0]);
+            setStatus((a) => ({
+              ...a,
+              msg: "",
+              loading: false,
+              error: false,
+              success: false,
+            }));
+          } else {
+            setStatus((a) => ({
+              ...a,
+              msg: d.Message,
+              loading: false,
+              error: true,
+              success: false,
+            }));
+          }
+        } else {
+          setStatus((a) => ({
+            ...a,
+            msg: "",
+            loading: true,
+            error: false,
+            success: false,
+          }));
+          let d = await ApiFetcher({
+            url: API_Query.getLast(
+              showDate.name,
+              showDate.name == "fir" ? "cr_no" : "csr_no"
+            ),
+          });
+          if (d.Status) {
+            setnextdata(d.Data[showDate.name == "fir" ? "cr_no" : "csr_no"]);
             setStatus((a) => ({
               ...a,
               msg: "",
@@ -169,6 +203,7 @@ export default function Idpetition({ id }) {
               <h3>Current Number : {petition.current_no}</h3>
               <p>
                 Transfer the Current number to {showDate.name.toUpperCase()}{" "}
+                <span className="nxt">{nextdata.length > 0 && IdGen(nextdata)}</span>
               </p>
               <span>
                 Enter {showDate.name} Register Date{" "}

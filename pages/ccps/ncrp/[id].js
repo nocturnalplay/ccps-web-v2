@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { DateFormate } from "@/components/Forms";
+import { IdGen } from "@/components/new_id_gen/idgen";
 // Create styles
 const styles = StyleSheet.create({
   page: {
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
 export default function Idncrp({ id }) {
   const [ncrp, setncrp] = useState(ncrpdata);
   const router = useRouter();
+  const [nextdata, setnextdata] = useState("");
 
   const [status, setStatus] = useState({
     msg: "",
@@ -66,31 +68,67 @@ export default function Idncrp({ id }) {
   useEffect(() => {
     try {
       (async () => {
-        setStatus((a) => ({
-          ...a,
-          msg: "",
-          loading: true,
-          error: false,
-          success: false,
-        }));
-        let d = await ApiFetcher({ url: API_Query.column1("ncrp", "id", id) });
-        if (d.Status) {
-          setncrp(d.Data[0]);
+        if (!showDate.status) {
           setStatus((a) => ({
             ...a,
             msg: "",
-            loading: false,
+            loading: true,
             error: false,
             success: false,
           }));
+          let d = await ApiFetcher({
+            url: API_Query.column1("ncrp", "id", id),
+          });
+          if (d.Status) {
+            setncrp(d.Data[0]);
+            setStatus((a) => ({
+              ...a,
+              msg: "",
+              loading: false,
+              error: false,
+              success: false,
+            }));
+          } else {
+            setStatus((a) => ({
+              ...a,
+              msg: d.Message,
+              loading: false,
+              error: true,
+              success: false,
+            }));
+          }
         } else {
           setStatus((a) => ({
             ...a,
-            msg: d.Message,
-            loading: false,
-            error: true,
+            msg: "",
+            loading: true,
+            error: false,
             success: false,
           }));
+          let d = await ApiFetcher({
+            url: API_Query.getLast(
+              showDate.name,
+              showDate.name == "fir" ? "cr_no" : "csr_no"
+            ),
+          });
+          if (d.Status) {
+            setnextdata(d.Data[showDate.name == "fir" ? "cr_no" : "csr_no"]);
+            setStatus((a) => ({
+              ...a,
+              msg: "",
+              loading: false,
+              error: false,
+              success: false,
+            }));
+          } else {
+            setStatus((a) => ({
+              ...a,
+              msg: d.Message,
+              loading: false,
+              error: true,
+              success: false,
+            }));
+          }
         }
       })();
     } catch (error) {
@@ -165,7 +203,12 @@ export default function Idncrp({ id }) {
           {showDate.status ? (
             <div className="transfer-tab">
               <h3>Ack Number : {ncrp.ack_no}</h3>
-              <p>Transfer the Ack number to {showDate.name.toUpperCase()} </p>
+              <p>
+                Transfer the Ack number to {showDate.name.toUpperCase()}
+                <span className="nxt">
+                  {nextdata.length > 0 && IdGen(nextdata)}
+                </span>
+              </p>
               <span>
                 Enter {showDate.name} Register Date{" "}
                 <input
