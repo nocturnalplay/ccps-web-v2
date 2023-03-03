@@ -1,4 +1,23 @@
 {
+  "action_type": [
+    "FIR",
+    "CSR",
+    "CSR-FIR",
+    "Withdrawal",
+    "pending",
+    "disposed",
+    "rejected"
+  ],
+  "status": [
+    "Closed",
+    "Under Process",
+    "FIR Registered",
+    "Withdrawal",
+    "Rejected",
+    "NC Registered",
+    "PENDING",
+    "DISPOSED"
+  ],
   "dist": ["SALEM CITY"],
   "ps": [
     "PALLAPATTY",

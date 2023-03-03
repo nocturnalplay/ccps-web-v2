@@ -38,7 +38,7 @@
   {
     "table_name": "status",
     "name": "Status",
-    "type": "text",
+    "type": "option",
     "disable": false
   },
   {
@@ -60,6 +60,12 @@
     "disable": false
   },
   {
+    "table_name": "gist",
+    "name": "Gist",
+    "type": "textarea",
+    "disable": false
+  },
+  {
     "table_name": "ef",
     "name": "EF",
     "type": "text",
@@ -68,7 +74,7 @@
   {
     "table_name": "action_type",
     "name": "Action Type",
-    "type": "text",
+    "type": "option",
     "disable": false
   },
   {

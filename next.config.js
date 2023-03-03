@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: false,
   env:{
-    URL:`http://192.168.1.4:3000`,
-    API:`http://192.168.1.4:3333`,
+    URL:`http://192.168.1.20:3001`,
+    API:`http://192.168.1.20:3334`,
   }
 }
 
