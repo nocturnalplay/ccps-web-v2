@@ -85,7 +85,9 @@ export default function Newncrp() {
         if (
           a.table_name === "incident_date" ||
           a.table_name === "compl_date" ||
-          a.table_name === "action_taken"
+          a.table_name === "action_taken"||
+          a.table_name === "csr_date" ||
+          a.table_name === "fir_date"
         ) {
           let val = DateFormate(ncrp[a.table_name]);
           ncrp[a.table_name] = val;

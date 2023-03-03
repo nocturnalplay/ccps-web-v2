@@ -50,7 +50,9 @@ export default function Newncrp({ id }) {
                 } else if (
                   a === "incident_date" ||
                   a === "compl_date" ||
-                  a === "action_taken"
+                  a === "action_taken" ||
+                  a === "csr_date" ||
+                  a === "fir_date"
                 ) {
                   let d = dd[a].split(" ");
                   d = d[0].split("/");
@@ -116,7 +118,9 @@ export default function Newncrp({ id }) {
         if (
           a.table_name === "incident_date" ||
           a.table_name === "compl_date" ||
-          a.table_name === "action_taken"
+          a.table_name === "action_taken" ||
+          a.table_name === "csr_date" ||
+          a.table_name === "fir_date"
         ) {
           let val = DateFormate(ncrp[a.table_name]);
           ncrp[a.table_name] = val;
