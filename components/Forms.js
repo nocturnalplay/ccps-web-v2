@@ -23,7 +23,7 @@ export function DropDown(props) {
 }
 
 export function DateFormate(val) {
-  if (!val) {
+  if (!val || String(val).trim() == "" || val == undefined || val == null) {
     return "";
   } else {
     let a = val.split("-");
