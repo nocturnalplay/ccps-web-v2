@@ -60,6 +60,24 @@
     "disable": false
   },
   {
+    "table_name": "compl_details",
+    "name": "Complainant Details",
+    "type": "textarea",
+    "disable": false
+  },
+  {
+    "table_name": "counter_petitioner",
+    "name": "Counter Petitioner",
+    "type": "text",
+    "disable": false
+  },
+  {
+    "table_name": "counter_petitioner_number",
+    "name": "Counter Petitioner Number",
+    "type": "text",
+    "disable": false
+  },
+  {
     "table_name": "gist",
     "name": "Gist",
     "type": "textarea",
@@ -78,6 +96,12 @@
     "disable": false
   },
   {
+    "table_name": "amount_lost",
+    "name": "Amount Lost",
+    "type": "number",
+    "disable": false
+  },
+  {
     "table_name": "csr_no",
     "name": "CSR No",
     "type": "text",
@@ -90,6 +114,12 @@
     "disable": false
   },
   {
+    "table_name": "csr_time",
+    "name": "CSR Time",
+    "type": "time",
+    "disable": false
+  },
+  {
     "table_name": "fir_no",
     "name": "FIR No",
     "type": "text",
@@ -99,6 +129,18 @@
     "table_name": "fir_date",
     "name": "FIR Date",
     "type": "date",
+    "disable": false
+  },
+  {
+    "table_name": "fir_time",
+    "name": "FIR Time",
+    "type": "time",
+    "disable": false
+  },
+  {
+    "table_name": "fir_section",
+    "name": "FIR Section",
+    "type": "text",
     "disable": false
   }
 ]

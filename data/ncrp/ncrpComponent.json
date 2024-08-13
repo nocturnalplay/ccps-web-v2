@@ -9,11 +9,18 @@
   "incident_date": "",
   "compl_date": "",
   "action_taken": "",
+  "compl_details": "",
+  "counter_petitioner": "",
+  "counter_petitioner_number": "",
   "gist": "",
   "ef": "",
   "action_type": "",
+  "amount_lost":"",
   "csr_no": "",
   "csr_date": "",
+  "csr_time":"",
   "fir_no": "",
-  "fir_date": ""
+  "fir_date": "",
+  "fir_time":"",
+  "fir_section":""
 }
